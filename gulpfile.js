@@ -5,8 +5,9 @@ var concat = require('gulp-concat-util');
 var fs = require('fs');
 var del = require('del');
 
-var src_path    = './src/**';
-var md_src_path = './src/**/*.md';
+var src_path      = './src/**';
+var md_src_path   = './src/**/*.md';
+var settings_path = './settings/**';
 
 //------------
 // build markdown
@@ -41,7 +42,8 @@ gulp.task('clean', function(cb) {
 // watch
 //------------
 gulp.task('watch', function(){
-
+  gulp.watch([md_src_path, settings_path]    ['build-md']);
+  gulp.watch([src_path, '!'+md_src_path],    ['build-except-md']);
 });
 
 //------------
