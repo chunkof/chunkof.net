@@ -1,0 +1,17 @@
+{
+  "name": "",
+  "version": "0.0.0",
+  "description": "",
+  "main": "debug.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "del": "^2.0.2",
+    "gulp-concat-util": "^0.5.2",
+    "gulp-markdown": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "chunkof"
+}
